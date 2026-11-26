@@ -1,0 +1,5 @@
+# Run in PowerShell with Docker Desktop running
+docker run -d --name pgvector-db -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=vectordb -p 5432:5432 pgvector/pgvector:pg16
+# If already created:
+docker start pgvector-db
+docker ps
